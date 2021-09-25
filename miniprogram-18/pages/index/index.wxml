@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="box">
+<view class='title'>彩票号码生成器</view>
+<view>产生的彩票号码为：</view>
+<view wx:for="{{rand}}">{{item}}</view>
+<button type='primary'bindtap='newRand'>产生新的彩票号码</button>
+<view>电科19-2-201923010231-张喜源</view>
+<view>彼方尚有荣光在</view>
+</view>
