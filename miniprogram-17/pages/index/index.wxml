@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class='box'>
+<view class='title'>银行利率计算</view>
+<view>电科19-2-201923010231-张喜源</view>
+<view>彼方尚有荣光在</view>
+<input placeholder="请输入本金" placeholder-class="placeholder" bindblur='Bnum' type='number'></input>
+<input placeholder="请输入利率" placeholder-class="placeholder" bindblur='Lnum' type='number'step ="0.02"></input>
+<input placeholder="请输入存储年数" placeholder-class="placeholder" bindblur='Nnum' type='number'></input>
+<button type='primary' bindtap='calc'>提交</button>
+<view hidden='{{flag}}' class='content'>
+<view class='content-item'>本金：{{B}}</view>
+<view class='content-item'>利率为：{{L}}</view>
+<view class='content-item'>存储年数为：{{N}}</view>
+<view class='content-item'>最终积蓄为：{{J}}</view>
+</view>
+</view>
+
